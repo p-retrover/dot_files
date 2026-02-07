@@ -1,0 +1,422 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main",
+            "Updated": "2025-09-01T21:59:23+05:30",
+            "Manifests": 1403
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2025-09-01T22:00:28+05:30",
+            "Manifests": 2180
+        },
+        {
+            "Name": "versions",
+            "Source": "https://github.com/ScoopInstaller/Versions",
+            "Updated": "2025-09-01T22:13:57+05:30",
+            "Manifests": 510
+        },
+        {
+            "Name": "java",
+            "Source": "https://github.com/ScoopInstaller/Java",
+            "Updated": "2025-09-01T18:10:48+05:30",
+            "Manifests": 299
+        }
+    ],
+    "apps": [
+        {
+            "Updated": "2025-08-06T00:07:54.4412654+05:30",
+            "Source": "main",
+            "Name": "7zip",
+            "Info": "",
+            "Version": "25.01"
+        },
+        {
+            "Updated": "2025-08-23T00:46:52.6809892+05:30",
+            "Source": "main",
+            "Name": "aria2",
+            "Info": "",
+            "Version": "1.37.0-1"
+        },
+        {
+            "Updated": "2025-09-02T00:46:29.8721385+05:30",
+            "Source": "extras",
+            "Name": "bitwarden",
+            "Info": "",
+            "Version": "2025.8.2"
+        },
+        {
+            "Updated": "2025-08-01T00:34:01.3381436+05:30",
+            "Source": "extras",
+            "Name": "blender",
+            "Info": "",
+            "Version": "4.5.1"
+        },
+        {
+            "Updated": "2025-08-15T12:49:27.1514065+05:30",
+            "Source": "main",
+            "Name": "cacert",
+            "Info": "",
+            "Version": "2025-08-12"
+        },
+        {
+            "Updated": "2023-11-18T18:25:07.4141037+05:30",
+            "Source": "main",
+            "Name": "ccat",
+            "Info": "",
+            "Version": "1.1.0"
+        },
+        {
+            "Updated": "2025-06-28T17:54:39.7035194+05:30",
+            "Source": "extras",
+            "Name": "cheat-engine",
+            "Info": "",
+            "Version": "7.6"
+        },
+        {
+            "Updated": "2025-08-15T15:10:56.0230111+05:30",
+            "Source": "main",
+            "Name": "clink",
+            "Info": "",
+            "Version": "1.7.22"
+        },
+        {
+            "Updated": "2025-09-02T00:47:38.9154239+05:30",
+            "Source": "main",
+            "Name": "cmake",
+            "Info": "",
+            "Version": "4.1.1"
+        },
+        {
+            "Updated": "2025-06-05T18:00:33.6300528+05:30",
+            "Source": "main",
+            "Name": "cpufetch",
+            "Info": "",
+            "Version": "1.06"
+        },
+        {
+            "Updated": "2025-06-05T18:31:57.0053987+05:30",
+            "Source": "main",
+            "Name": "dark",
+            "Info": "",
+            "Version": "3.14.1"
+        },
+        {
+            "Updated": "2025-09-02T00:47:41.8516769+05:30",
+            "Source": "main",
+            "Name": "fastfetch",
+            "Info": "",
+            "Version": "2.51.1"
+        },
+        {
+            "Updated": "2025-08-23T01:11:08.0198703+05:30",
+            "Source": "main",
+            "Name": "ffmpeg",
+            "Info": "",
+            "Version": "8.0"
+        },
+        {
+            "Updated": "2023-10-29T22:36:51.015964+05:30",
+            "Source": "main",
+            "Name": "figlet",
+            "Info": "",
+            "Version": "1.0-go"
+        },
+        {
+            "Updated": "2025-08-06T00:12:20.4594568+05:30",
+            "Source": "extras",
+            "Name": "freedownloadmanager",
+            "Info": "",
+            "Version": "6.29.1.6392"
+        },
+        {
+            "Updated": "2025-08-26T01:04:16.4419639+05:30",
+            "Source": "extras",
+            "Name": "freetube",
+            "Info": "",
+            "Version": "0.23.8-beta"
+        },
+        {
+            "Updated": "2025-08-15T12:53:56.8842996+05:30",
+            "Source": "main",
+            "Name": "go",
+            "Info": "",
+            "Version": "1.25.0"
+        },
+        {
+            "Updated": "2025-07-11T19:33:52.1460693+05:30",
+            "Source": "main",
+            "Name": "gow",
+            "Info": "",
+            "Version": "0.8.0"
+        },
+        {
+            "Updated": "2025-08-11T00:01:38.3169474+05:30",
+            "Source": "extras",
+            "Name": "httptoolkit",
+            "Info": "",
+            "Version": "1.22.0"
+        },
+        {
+            "Updated": "2025-08-15T12:55:46.6530315+05:30",
+            "Source": "extras",
+            "Name": "hwinfo",
+            "Info": "",
+            "Version": "8.30-5800"
+        },
+        {
+            "Updated": "2025-06-28T21:02:59.610444+05:30",
+            "Source": "extras",
+            "Name": "ida-free",
+            "Info": "",
+            "Version": "8.4.240527"
+        },
+        {
+            "Updated": "2025-09-02T00:47:43.9090207+05:30",
+            "Source": "main",
+            "Name": "innounp",
+            "Info": "",
+            "Version": "2.65.1"
+        },
+        {
+            "Updated": "2025-08-23T01:20:25.6490699+05:30",
+            "Source": "extras",
+            "Name": "joplin",
+            "Info": "",
+            "Version": "3.4.6"
+        },
+        {
+            "Updated": "2025-07-11T15:29:35.9507103+05:30",
+            "Source": "main",
+            "Name": "julia",
+            "Info": "",
+            "Version": "1.11.6"
+        },
+        {
+            "Updated": "2025-08-15T13:44:35.5498697+05:30",
+            "Source": "extras",
+            "Name": "kdeconnect",
+            "Info": "",
+            "Version": "25.04-5109"
+        },
+        {
+            "Updated": "2025-08-15T12:57:29.6635259+05:30",
+            "Source": "main",
+            "Name": "kotlin",
+            "Info": "",
+            "Version": "2.2.10"
+        },
+        {
+            "Updated": "2025-07-09T18:37:03.1470226+05:30",
+            "Source": "main",
+            "Name": "llvm",
+            "Info": "",
+            "Version": "20.1.8"
+        },
+        {
+            "Updated": "2025-07-22T12:44:05.0501978+05:30",
+            "Source": "extras",
+            "Name": "miniconda3",
+            "Info": "",
+            "Version": "25.5.1-1"
+        },
+        {
+            "Updated": "2025-06-05T18:02:07.4911914+05:30",
+            "Source": "extras",
+            "Name": "msedgeredirect",
+            "Info": "",
+            "Version": "0.8.0.0"
+        },
+        {
+            "Updated": "2025-06-30T13:18:24.0620038+05:30",
+            "Source": "main",
+            "Name": "msys2",
+            "Info": "",
+            "Version": "2025-06-22"
+        },
+        {
+            "Updated": "2024-11-19T11:48:31.3865832+05:30",
+            "Source": "main",
+            "Name": "nasm",
+            "Info": "",
+            "Version": "2.16.03"
+        },
+        {
+            "Updated": "2025-06-28T18:24:31.1176129+05:30",
+            "Source": "extras",
+            "Name": "ngspice",
+            "Info": "",
+            "Version": "44"
+        },
+        {
+            "Updated": "2025-08-15T13:33:56.8328693+05:30",
+            "Source": "main",
+            "Name": "nodejs",
+            "Info": "",
+            "Version": "24.6.0"
+        },
+        {
+            "Updated": "2025-08-01T00:38:41.0746902+05:30",
+            "Source": "extras",
+            "Name": "obs-studio",
+            "Info": "",
+            "Version": "31.1.2"
+        },
+        {
+            "Updated": "2025-08-23T01:32:21.0463392+05:30",
+            "Source": "extras",
+            "Name": "obsidian",
+            "Info": "",
+            "Version": "1.9.10"
+        },
+        {
+            "Updated": "2025-08-15T13:34:36.4472628+05:30",
+            "Source": "main",
+            "Name": "oh-my-posh",
+            "Info": "",
+            "Version": "26.19.1"
+        },
+        {
+            "Updated": "2025-08-23T01:47:18.2682268+05:30",
+            "Source": "extras",
+            "Name": "onecommander",
+            "Info": "",
+            "Version": "3.99.1.0"
+        },
+        {
+            "Updated": "2025-07-22T12:54:38.2450441+05:30",
+            "Source": "java",
+            "Name": "openjdk",
+            "Info": "",
+            "Version": "24.0.2-12"
+        },
+        {
+            "Updated": "2025-08-15T14:21:44.642444+05:30",
+            "Source": "extras",
+            "Name": "powertoys",
+            "Info": "",
+            "Version": "0.93.0"
+        },
+        {
+            "Updated": "2025-06-05T18:00:06.5868481+05:30",
+            "Source": "main",
+            "Name": "pshazz",
+            "Info": "",
+            "Version": "0.2022.03.09"
+        },
+        {
+            "Updated": "2025-06-28T18:13:41.621788+05:30",
+            "Source": "extras",
+            "Name": "putty",
+            "Info": "",
+            "Version": "0.83"
+        },
+        {
+            "Updated": "2024-11-09T23:18:28.9437573+05:30",
+            "Source": "versions",
+            "Name": "python310",
+            "Info": "",
+            "Version": "3.10.11"
+        },
+        {
+            "Updated": "2024-11-15T00:22:05.3708029+05:30",
+            "Source": "versions",
+            "Name": "python39",
+            "Info": "",
+            "Version": "3.9.13"
+        },
+        {
+            "Updated": "2025-06-16T11:38:54.181301+05:30",
+            "Source": "main",
+            "Name": "r",
+            "Info": "",
+            "Version": "4.5.1"
+        },
+        {
+            "Updated": "2025-07-27T02:20:58.692128+05:30",
+            "Source": "main",
+            "Name": "ruby",
+            "Info": "",
+            "Version": "3.4.5-1"
+        },
+        {
+            "Updated": "2025-06-05T18:20:26.5585792+05:30",
+            "Source": "main",
+            "Name": "rustup-msvc",
+            "Info": "",
+            "Version": "1.28.2"
+        },
+        {
+            "Updated": "2025-06-23T11:47:10.7434688+05:30",
+            "Source": "main",
+            "Name": "scrcpy",
+            "Info": "",
+            "Version": "3.3.1"
+        },
+        {
+            "Updated": "2025-06-28T19:42:45.8259787+05:30",
+            "Source": "extras",
+            "Name": "spotube",
+            "Info": "",
+            "Version": "4.0.2"
+        },
+        {
+            "Updated": "2025-08-23T01:47:47.5492577+05:30",
+            "Source": "main",
+            "Name": "syncthing",
+            "Info": "",
+            "Version": "2.0.3"
+        },
+        {
+            "Updated": "2025-08-15T14:26:35.5551399+05:30",
+            "Source": "extras",
+            "Name": "syncthingtray",
+            "Info": "",
+            "Version": "2.0.0"
+        },
+        {
+            "Updated": "2025-05-15T21:28:17.1151238+05:30",
+            "Source": "main",
+            "Name": "tealdeer",
+            "Info": "",
+            "Version": "1.7.2"
+        },
+        {
+            "Updated": "2025-08-23T01:33:32.4310058+05:30",
+            "Source": "main",
+            "Name": "uv",
+            "Info": "",
+            "Version": "0.8.13"
+        },
+        {
+            "Updated": "2025-08-23T01:38:50.8698537+05:30",
+            "Source": "extras",
+            "Name": "vscodium",
+            "Info": "",
+            "Version": "1.103.25610"
+        },
+        {
+            "Updated": "2025-07-11T19:28:07.3003747+05:30",
+            "Source": "main",
+            "Name": "wget",
+            "Info": "",
+            "Version": "1.21.4"
+        },
+        {
+            "Updated": "2025-07-22T13:00:17.5135599+05:30",
+            "Source": "extras",
+            "Name": "wireshark",
+            "Info": "",
+            "Version": "4.4.8"
+        },
+        {
+            "Updated": "2025-08-23T01:44:14.1930714+05:30",
+            "Source": "extras",
+            "Name": "x64dbg",
+            "Info": "",
+            "Version": "2025-08-19_19-40"
+        }
+    ]
+}

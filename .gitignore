@@ -1,0 +1,7 @@
+# Example .gitignore for dotfiles
+.ssh/
+.gnupg/
+*.log
+.DS_Store
+auth.json
+.netrc

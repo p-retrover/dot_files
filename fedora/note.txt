@@ -1,0 +1,2 @@
+to replicate: run "sudo dnf install $(cat dnf-user-installed.txt)"
+to restore flatpak apps: "xargs -a flatpak-user.txt flatpak install -y"

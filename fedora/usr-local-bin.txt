@@ -1,0 +1,6 @@
+claude
+filebrowser
+firebase
+gemini
+matlab
+mex

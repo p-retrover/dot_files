@@ -1,0 +1,16 @@
+ca.desrt.dconf-editor
+com.brave.Browser
+com.calibre_ebook.calibre
+com.discordapp.Discord
+com.github.IsmaelMartinez.teams_for_linux
+com.github.d4nj1.tlpui
+com.github.tchx84.Flatseal
+com.spotify.Client
+io.freetubeapp.FreeTube
+io.github.ilya_zlobintsev.LACT
+io.github.martchus.syncthingtray
+net.codelogistics.webapps
+net.thunderbird.Thunderbird
+org.gnome.Extensions
+org.localsend.localsend_app
+org.qbittorrent.qBittorrent
