@@ -1,0 +1,11 @@
+betterlockscreen
+brave-bin
+hyprwayland-scanner-git
+localsend-bin
+paru
+sddm-sugar-candy-git
+swaylock-effects
+visual-studio-code-bin
+wlogout
+yay
+zen-browser-bin

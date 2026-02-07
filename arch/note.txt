@@ -1,0 +1,2 @@
+to restore : "sudo pacman -S --needed - < arch-pacman-installed.txt"
+for yay : "yay -S --needed - < arch-aur-installed.txt"
