@@ -1,0 +1,6 @@
+/home/p_retrover/.nvm/versions/node/v24.9.0/lib
+├── @anthropic-ai/claude-code@2.1.12
+├── @google/gemini-cli@
+├── corepack@0.34.0
+└── npm@11.6.0
+
