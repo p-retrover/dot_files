@@ -5,3 +5,18 @@
 .DS_Store
 auth.json
 .netrc
+
+# Allow specific configuration files
+!chrome/
+!chrome/**
+!user.js
+!extensions/
+
+# Specifically block sensitive files even if patterns change
+logins.json
+key4.db
+cookies.sqlite*
+places.sqlite*
+sessionstore.jsonlz4
+containers.json
+extension-preferences.json
