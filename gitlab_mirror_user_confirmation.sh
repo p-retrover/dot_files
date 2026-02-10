@@ -36,7 +36,14 @@ while IFS=$'\t' read -u 3 -r REPO VISIBILITY; do
 
         # C. Set GitLab target (HTTPS for campus network compatibility)
         git remote add gitlab "https://gitlab.com/$GITLAB_USER/$REPO.git"
-        
+        # --- LFS INTEGRATION START ---
+        # Check if the repository uses LFS
+        if git lfs ls-files &>/dev/null; then
+            echo "LFS detected in $REPO. Fetching and pushing LFS objects..."
+            git lfs fetch --all origin
+            git lfs push --all gitlab
+        fi
+        # --- LFS INTEGRATION END ---
         echo "Pushing $REPO to GitLab..."
         git push --mirror gitlab
 
