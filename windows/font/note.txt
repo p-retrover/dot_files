@@ -1,0 +1,44 @@
+Step A  Pick a Font Name
+
+Open:
+
+C:\Windows\Fonts
+
+Note the exact font name (e.g., Segoe UI, Arial, Consolas, etc.)
+
+Step B  Create Registry File
+
+Open Notepad
+
+Paste this (replace YOURFONT with exact font name):
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts]
+"Segoe UI (TrueType)"=""
+"Segoe UI Bold (TrueType)"=""
+"Segoe UI Bold Italic (TrueType)"=""
+"Segoe UI Italic (TrueType)"=""
+"Segoe UI Light (TrueType)"=""
+"Segoe UI Semibold (TrueType)"=""
+"Segoe UI Symbol (TrueType)"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
+"Segoe UI"="YOURFONT"
+
+Save as:
+
+changefont.reg
+
+Double-click  Allow  Restart PC
+
+To Restore Default Font
+
+Use:
+
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
+"Segoe UI"=-
+
+Restart again.

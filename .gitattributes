@@ -2,4 +2,5 @@
 .gitignore text eol=lf
 *.sh text eol=lf
 *.bat text eol=crlf
+*.reg text eol=crlf
 *.png binary   
