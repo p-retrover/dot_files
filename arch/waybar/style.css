@@ -1,0 +1,105 @@
+/* ========== Global ========== */
+
+* {
+    font-family: "Satoshi", "Font Awesome 6 Free", "Font Awesome 6 Brands", "Noto Sans";
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+/* ========== Bar Container ========== */
+
+window#waybar {
+    background: rgba(30, 30, 46, 0.85); /* Catppuccin Mocha base */
+    color: #cdd6f4;
+    border-radius: 12px;
+    margin: 6px 10px 0px 10px;
+    padding: 6px 10px;
+}
+
+/* ========== Workspaces ========== */
+
+#workspaces {
+    margin-right: 10px;
+}
+
+#workspaces button {
+    padding: 4px 8px;
+    margin: 0 4px;
+    border-radius: 8px;
+    background: transparent;
+    color: #a6adc8;
+}
+
+#workspaces button.active {
+    background: #89b4fa;
+    color: #1e1e2e;
+}
+
+#workspaces button.urgent {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* ========== Window Title ========== */
+
+#window {
+    font-weight: 500;
+    color: #cdd6f4;
+}
+
+/* ========== Right Modules ========== */
+
+#clock,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#pulseaudio,
+#backlight,
+#tray,
+#idle_inhibitor {
+    padding: 0 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+    background: rgba(49, 50, 68, 0.6);
+}
+
+/* Hover effect */
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover,
+#backlight:hover {
+    background: rgba(89, 91, 112, 0.6);
+}
+
+/* ========== Battery States ========== */
+
+#battery.warning {
+    background: #fab387;
+    color: #1e1e2e;
+}
+
+#battery.critical {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* ========== Network States ========== */
+
+#network.disconnected {
+    background: #f38ba8;
+    color: #1e1e2e;
+}
+
+/* ========== Tray Icons ========== */
+
+#tray {
+    padding-right: 6px;
+}
