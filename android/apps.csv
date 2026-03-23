@@ -1,0 +1,125 @@
+AppName,PackageName,LauncherActivity
+Myntra,com.myntra.android,com.myntra.android.activities.react.ReactActivity
+Geo Share,page.ooooo.geoshare,page.ooooo.geoshare.MainActivity
+Ola,com.olacabs.customer,com.olacabs.customer.ui.NewSplashActivity
+Tata 1mg,com.aranoah.healthkart.plus,com.aranoah.healthkart.plus.startup.splash.SplashActivity
+Uber,com.ubercab,com.ubercab.presidio.app.core.root.RootActivity
+Librera FD,com.foobnix.pro.pdf.reader,com.foobnix.ui2.MainTabs2
+PhonePe,com.phonepe.app,com.phonepe.app.launch.core.main.ui.MainActivity
+VLC,org.videolan.vlc,org.videolan.vlc.StartActivity
+IRCTC Rail Connect,cris.org.in.prs.ima,cris.org.in.ima.activities.IRCTCConnectActivity
+Chess,com.chess,com.chess.splash.SplashActivity
+SoundCloud,com.soundcloud.android,com.soundcloud.android.launcher.LauncherActivity
+RAR,com.rarlab.rar,com.rarlab.rar.MainActivity
+Wint Wealth,com.fourdegreewater.wintwealth,com.fourdegreewater.wintwealth.view.WintActivity
+Documents,com.onlyoffice.documents,app.editors.manager.ui.activities.main.MainActivity
+ZArchiver,ru.zdevs.zarchiver,ru.zdevs.zarchiver.ZArchiver
+Shizuku,moe.shizuku.privileged.api,moe.shizuku.manager.MainActivity
+qBitController,dev.bartuzen.qbitcontroller,dev.bartuzen.qbitcontroller.MainActivity
+Permission Manager X,com.mirfatif.permissionmanagerx,com.mirfatif.permissionmanagerx.fwk.MainActivityM
+Feeder,com.nononsenseapps.feeder,com.nononsenseapps.feeder.ui.MainActivity
+Zomato,com.application.zomato,com.application.zomato.gold
+NewPipe,org.schabi.newpipe,org.schabi.newpipe.MainActivity
+RailOne,org.cris.aikyam,com.example.aikyam.MainActivity
+Substack,com.substack.app,com.substack.app.ui.AppActivity
+Confirmtkt,com.confirmtkt.lite,com.confirmtkt.lite.LaunchActivity
+Omni Notes FOSS,it.feio.android.omninotes.foss,it.feio.android.omninotes.MainActivity
+Compass,com.bobek.compass,com.bobek.compass.MainActivity
+AJIO,com.ril.ajio,com.ril.ajio.launch.activity.SplashScreenActivity
+eBay,com.ebay.mobile,com.ebay.mobile.home.impl.main.MainActivity
+AppFlowy,io.appflowy.appflowy,io.appflowy.appflowy.MainActivity
+Tubular,org.polymorphicshade.tubular,org.schabi.newpipe.MainActivity
+Discord,com.discord,com.discord.main.MainDefault
+Package Names,com.csdroid.pkg,com.csdroid.pkg.MainActivity
+YONO SBI,com.sbi.lotusintouch,com.sbi.lotusintouch.MainActivity
+Unified Remote,com.Relmtech.Remote,com.unified.v3.frontend.views.MainActivity
+Rapido,com.rapido.passenger,com.rapido.passenger.DefaultAlias
+Acode,com.foxdebug.acode,com.foxdebug.acode.MainActivity
+MEGA,mega.privacy.android.app,mega.privacy.android.app.appstate.MegaActivity
+Truemeds,com.intellihealth.truemeds,com.intellihealth.truemeds.DefaultSplashAlias
+xManager,com.xc3fff0e.xmanager,com.xc3fff0e.xmanager.SplashActivity
+Booking.com,com.booking,com.booking.startup.HomeActivity
+Canta,io.github.samolego.canta,io.github.samolego.canta.MainActivity
+Lens,com.google.ar.lens,com.google.vr.apps.ornament.app.lens.LensLauncherActivity
+Firefox,org.mozilla.firefox,org.mozilla.firefox.App
+F-Droid,org.fdroid.fdroid,org.fdroid.fdroid.views.main.MainActivity
+Dr. Wolf,com.chess.chesscoach,com.chess.chesscoach.MainActivity
+aShell,in.sunilpaulmathew.ashell,in.sunilpaulmathew.ashell.activities.aShellActivity
+Telegram,org.telegram.messenger,org.telegram.messenger.DefaultIcon
+Street­Complete,de.westnordost.streetcomplete,de.westnordost.streetcomplete.screens.main.MainActivity
+Mapillary,com.mapillary.app,app.mapillary.android.presentation.TabbedMainActivity
+Syncthing,com.nutomic.syncthingandroid,com.nutomic.syncthingandroid.activities.FirstStartActivity
+WazirX,com.wrx.wazirx,com.wrx.wazirx.views.home.HomeActivity
+Komoot,de.komoot.android,de.komoot.android.ui.RootActivity
+SD Maid SE,eu.darken.sdmse,eu.darken.sdmse.main.ui.MainActivity
+Snapseed,com.niksoftware.snapseed,com.google.android.apps.snapseed.WelcomeScreenActivity
+Swiggy,in.swiggy.android,in.swiggy.android.HomeIcon
+WolframAlpha,com.wolfram.android.alpha,com.wolfram.android.alphalibrary.activity.WolframAlphaActivity
+I2P,net.i2p.android.router,net.i2p.android.I2PActivity
+spacedesk,ph.spacedesk.beta,ph.spacedesk.httpwww.spacedesk.SAActivityConnect
+Winlator,com.winlator,com.winlator.MainActivity
+Transparency,com.amazon.aba.application,com.tpncymobileapp.MainActivity
+OsmAnd~,net.osmand.plus,net.osmand.plus.activities.MapActivity
+Brave,com.brave.browser,com.google.android.apps.chrome.Main
+Meesho,com.meesho.supply,com.meesho.supply.default
+FUTO Keyboard,org.futo.inputmethod.latin,org.futo.inputmethod.latin.uix.settings.SettingsActivity
+Groww,com.nextbillion.groww,com.nextbillion.groww.genesys.loginsignup.activities.LoginActivity
+Lawnchair,app.lawnchair,app.lawnchair.LawnchairLauncher
+Teams,com.microsoft.teams,com.microsoft.skype.teams.Launcher
+Flipkart,com.flipkart.android,com.flipkart.android.SplashActivity
+Party UP!,me.ocv.partyup,me.ocv.partyup.MainActivity
+Obsidian,md.obsidian,md.obsidian.MainActivity
+Raindrop,io.raindrop.raindropio,io.raindrop.raindropio.MainActivity
+Keybase,io.keybase.ossifrage,io.keybase.ossifrage.MainActivity
+Notion,notion.id,notion.local.id.MainActivity
+Amazon,in.amazon.mShop.android.shopping,com.amazon.mShop.amazonpay.AmazonPayHomeActivityAliasWoShortcuts
+LinkedIn,com.linkedin.android,com.linkedin.android.authenticator.LaunchActivityDefault
+OSS Document Scanner,com.akylas.documentscanner,com.akylas.documentscanner.MainActivity
+LocalSend,org.localsend.localsend_app,org.localsend.localsend_app.MainActivity
+MATLAB,com.mathworks.matlabmobile,com.mathworks.matlabmobile.LicenseAgreementActivity
+Free Download Manager,org.freedownloadmanager.fdm,org.freedownloadmanager.fdm.MyActivity
+Buddy4Study Video App,com.buddy4study.video,com.buddy4study.video.MainActivity
+MakeMyTrip,com.makemytrip,com.mmt.travel.app.home.ui.SplashActivityPrimary
+RustDesk,com.carriez.flutter_hbb,com.carriez.flutter_hbb.MainActivity
+OpenVPN for Android,de.blinkt.openvpn,de.blinkt.openvpn.activities.MainActivity
+OLX India,com.olx.southasia,com.olxgroup.panamera.app.users.onboarding.activities.SplashActivity
+PCAPdroid,com.emanuelef.remote_capture,com.emanuelef.remote_capture.activities.MainActivity
+TripIt,com.tripit,com.tripit.splash.SplashActivity
+IndiaMART,com.indiamart.m,com.indiamart.m.MainActivity
+Niagara Launcher,bitpit.launcher,bitpit.launcher.ui.HomeActivity
+Plus,org.telegram.plus,org.telegram.messenger.AquaIcon
+Urban Company,com.urbanclap.urbanclap,com.urbanclap.urbanclap.core.app_icon.NormalUser
+Desmos,com.desmos.calculator,com.desmos.calculator.MainActivity
+Razorpay,com.razorpay.payments.app,com.razorpay.payments.app.MainActivity
+SHEIN,com.ril.shein,com.ril.shein.launch.activity.SplashScreenActivity
+Bandcamp,com.bandcamp.android,com.bandcamp.android.view.SplashActivity
+DroidCam,com.dev47apps.obsdroidcam,com.dev47apps.obsdroidcam.MainActivity
+Commons,fr.free.nrw.commons,fr.free.nrw.commons.auth.LoginActivity
+Aegis,com.beemdevelopment.aegis,com.beemdevelopment.aegis.ui.MainActivity
+GeoGebra,org.geogebra.android.calculator.suite,org.geogebra.android.privatelibrary.splashscreen.SplashScreenActivity
+Proton VPN,ch.protonvpn.android,ch.protonvpn.android.RoutingActivity
+Bitwarden,com.x8bit.bitwarden,com.x8bit.bitwarden.MainActivity
+Collabora Office,com.collabora.libreoffice,org.libreoffice.androidapp.ui.LibreOfficeUIActivity
+Open Camera,net.sourceforge.opencamera,net.sourceforge.opencamera.MainActivity
+Lenskart,com.lenskart.app,com.lenskart.app.main.ui.SplashActivity
+Contacts,com.google.android.contacts,com.android.contacts.activities.PeopleActivity
+Domino's,com.Dominos,com.Dominos.activity.alias.LauncherDefaultAlias
+Chalo,app.zophop,app.chalo.android.MainActivity
+Nova Launcher,com.teslacoilsw.launcher,com.teslacoilsw.launcher.NovaShortcutHandler
+Paytm,net.one97.paytm,net.one97.paytm.landingpage.activity.AJRMainActivity
+BankBazaar,com.bankbazaar.app,com.bankbazaar.app.MainActivity
+Shelter,net.typeblog.shelter,net.typeblog.shelter.ui.MainActivity
+WhatsApp,com.whatsapp,com.whatsapp.Main
+Steam,com.valvesoftware.android.steam.community,com.valvesoftware.android.steam.community.MainActivity
+IMDb,com.imdb.mobile,com.imdb.mobile.HomeActivity
+KDE Connect,org.kde.kdeconnect_tp,org.kde.kdeconnect.ui.MainActivity
+Rethink,com.celzero.bravedns,com.celzero.bravedns.ui.activity.LauncherAliasAppLock
+Blinkit,com.grofers.customerapp,com.grofers.customerapp.DIWALI
+Kite,com.zerodha.kite3,com.zerodha.kite3.MainActivity
+Practo,com.practo.fabric,com.practo.fabric.LauncherAlias
+Decathlon,com.evamall.evacustomer,com.evamall.evacustomer.MainActivity
+Kvaesitso,de.mm20.launcher2.release,de.mm20.launcher2.ui.launcher.LauncherActivity
+Lemuroid,com.swordfish.lemuroid,com.swordfish.lemuroid.app.mobile.feature.main.MainActivity
+Geto,com.android.geto,com.android.geto.MainActivity
+AIDA64,com.finalwire.aida64,com.finalwire.aida64.HHMainActivity
+BookMyShow,com.bt.bms,com.movie.bms.splashscreen.SplashScreenActivity
