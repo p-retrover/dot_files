@@ -1,50 +1,59 @@
-Running out of space on `/boot` is a classic Fedora headache, especially since Fedora keeps old kernels by default. When `/boot` hits **0 bytes**, it can prevent system updates and even cause boot failures because there’s no room for temporary files or new kernel images.
+# Fedora `/boot` Maintenance & Optimization
 
-### 1\. Remove Old Kernels (The Fastest Fix)
+When `/boot` hits **0 bytes** (or close to it), DNF updates will fail, and the system may become unresponsive during boot or hibernation. This is usually caused by heavy `initramfs` images and the "Rescue" kernel.
 
-Fedora usually keeps the last 3 kernels. If an update failed halfway, you might have partially installed kernels taking up space. You can force-remove old ones, keeping only the current running version.
-
-Open your terminal and run:
-
+## 1. Diagnose the Bloat
+To see exactly what is eating the space, run:
 ```bash
-sudo dnf remove $(dnf repoquery --installonly --latest-limit=-1 -q)
+sudo du -sh /boot/* | sort -h
+```
+**Common Culprits:**
+* `initramfs-0-rescue-*.img`: Often **200MB+**. This is a generic image designed to boot on any hardware.
+* `initramfs-*.img`: Standard boot images, usually **50MB - 100MB**.
+
+## 2. Limit Kernel Count
+Edit `/etc/dnf/dnf.conf` to ensure Fedora doesn't keep too many old versions.
+
+```ini
+[main]
+# Keep only 2 kernels (Current + 1 Fallback)
+installonly_limit=2
+# Ensure dependencies are purged
+clean_requirements_on_remove=True
 ```
 
-  * **What this does:** It identifies all installed kernels except the one you are currently booted into and removes them.
+## 3. Advanced Optimization (The "Permanent" Fix)
+By default, Fedora builds `initramfs` images that are "one-size-fits-all." On a personal machine, you can shrink these by **~70%** using Dracut configurations.
 
-### 2\. Limit the Number of Kernels Permanently
-
-To prevent this from happening again, you should tell Fedora to only keep 2 kernels instead of the default 3 (or more).
-
-1.  Edit the DNF configuration file:
-    `sudo nano /etc/dnf/dnf.conf`
-2.  Find the line `installonly_limit=3` and change it to:
-    `installonly_limit=2`
-3.  Save and exit (Ctrl+O, Enter, Ctrl+X).
-
-### 3\. Clean Up DNF Cache
-
-Sometimes the package manager leaves metadata and temporary files in the boot partition if it's mounted strangely, though usually, this lives in `/var`. Still, it's good practice:
-
-```bash
-sudo dnf clean all
+Create `/etc/dracut.conf.d/99-small-boot.conf`:
+```text
+# Use XZ compression (Better than default gzip)
+compress="xz"
+# Only include drivers for THIS hardware
+hostonly="yes"
+# Stop generating the massive rescue image
+dracut_rescue_image="no"
 ```
 
------
-
-### 4\. Check for "Ghost" Files
-
-If the commands above didn't free up enough space, something else might be hiding there. Run this to see what is actually eating the space:
-
+**Apply changes immediately:**
 ```bash
-du -sh /boot/* | sort -h
+sudo rm /boot/*rescue*
+sudo dracut -f --all
 ```
 
-**Look for:**
+---
 
-  * **initramfs images:** These are usually the largest files. If you see many versions, the kernel removal in Step 1 should have handled them.
-  * **Lost+Found:** If the system crashed, there might be recovered fragments here.
+## 4. Drawbacks and Implications
 
-### Important Note on Hibernation
+| Change | Pro | Con |
+| :--- | :--- | :--- |
+| **`installonly_limit=2`** | Frees ~100-200MB. Prevents partition overflow. | You only have one "fallback" kernel. If an update breaks two kernels, you need a Live USB. |
+| **`hostonly="yes"`** | Shrinks images from ~100MB to ~30MB. | If you move your SSD to a different computer (e.g., different CPU/GPU), it might not boot. |
+| **`compress="xz"`** | Significant space savings. | Generating the image (during kernel updates) takes slightly longer (CPU intensive). |
+| **`dracut_rescue_image=no`**| Reclaims **~250MB** instantly. | Removes the "Rescue" entry from GRUB. You must use a Fedora Live USB for emergency repairs. |
 
-Since you've mentioned having issues with **hibernation and unresponsiveness** in Fedora before, a full `/boot` partition can sometimes be the culprit if the system is trying to write bootloader updates or state changes to a drive with zero capacity. Fixing this might actually improve your system's stability when waking from sleep.
+## 5. Maintenance Commands
+* **Force cleanup of old kernels:**
+  `dnf repoquery --installonly --latest-limit=-1 -q | xargs -r sudo dnf remove`
+* **Check remaining space:**
+  `df -h /boot`
