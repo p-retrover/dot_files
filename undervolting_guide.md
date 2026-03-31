@@ -76,3 +76,59 @@ Regardless of the OS, keep these principles in mind for your config repo:
 ## Resources
 
 [Reddit](https://www.reddit.com/r/pathofexile/comments/hpi8fb/psa_use_at_your_own_risk_but_undervolting_my/)
+
+## Implementation
+
+```bash
+sudo intel-undervolt apply
+```
+```text
+CPU (0): Values do not equal
+GPU (1): -0.00 mV
+CPU Cache (2): Values do not equal
+System Agent (3): -0.00 mV
+Analog I/O (4): -0.00 mV
+
+```
+
+The reason you're seeing `Values do not equal` is that your **11th Gen Intel (Tiger Lake)** processor has hardware-level **Undervolt Protection**. 
+
+Starting with the 11th Gen, Intel locked the voltage control registers (MSR 0x150) to mitigate the "Plundervolt" security vulnerability. Your CPU is receiving the command but immediately rejecting it, which is why the readback doesn't match your config.
+
+Since you're on a laptop where the BIOS is likely "thin" (no advanced overclocking menus), you have two paths forward:
+
+---
+
+## **Path A: The Practical Alternative (Power Limiting)**
+If you can't lower the *voltage*, you can still lower the *wattage*. This is 100% effective at stopping thermal throttling in games like Path of Exile.
+
+`intel-undervolt` can also control **Power Limits (PL1 and PL2)**.
+1.  **Edit your config:** `sudo nano /etc/intel-undervolt.conf`
+2.  **Modify the power limit section:**
+    ```text
+    # Example for a U-series chip like your i5-1155G7
+    # PL1 is long-term power (usually 15-28W)
+    # PL2 is short-term burst (usually 35-45W)
+    
+    power package 0 25 15
+    ```
+    * The first number `25` is the wattage limit.
+    * The second number `15` is the time window in seconds.
+3.  **Apply:** `sudo intel-undervolt apply`
+    * *This will almost always work even when voltage is locked.* By capping the power at, say, 20W or 25W, you prevent the CPU from spiking to 95°C.
+
+---
+
+## **Path B: The "Hard" Path (BIOS Bit-Flipping)**
+To truly unlock the voltage, you have to manually flip a hidden bit in your UEFI variables using an EFI shell. **This is risky and can soft-brick your laptop if you use the wrong offset.**
+
+For most 11th Gen laptops, the "Overclocking Lock" and "CFG Lock" are hidden variables. The community-standard process involves:
+1.  **Identifying the Offset:** Using a tool like `H2OUVE` or dumping your BIOS to find the hex offset for `Overclocking Lock`. (For many 11th Gen chips, the offset is `0xDF`).
+2.  **Flipping the Bit:** Booting into a specialized EFI Shell (like `mod-setup_var`) and running a command like:
+    `setup_var CpuSetup 0xDF 0x00`
+3.  **Result:** This "unlocks" the door, allowing `intel-undervolt` to actually work.
+
+> [!CAUTION]  
+> I do not recommend Path B unless you have a way to recover your BIOS (like a CMOS reset or BIOS Flashback) and are comfortable with hex offsets.
+
+---
