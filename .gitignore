@@ -20,3 +20,5 @@ places.sqlite*
 sessionstore.jsonlz4
 containers.json
 extension-preferences.json
+
+temp_mirror_work/
