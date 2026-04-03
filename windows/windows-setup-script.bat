@@ -34,8 +34,12 @@ scoop bucket add versions >nul 2>&1
 echo [ok] Buckets ready.
 
 :: --- CORE INSTALLS ---
-echo [*] Installing git and 7zip...
-scoop install git 7zip scoop-import
+echo [*] Installing git, 7zip, scoop-import, aria2
+scoop install git 7zip scoop-import aria2
+echo [*] Optimizing download speeds with aria2...
+scoop config aria2-warning-enabled false
+scoop config aria2-max-connection-per-server 16
+scoop config aria2-split 16
 :: To install all apps from the json file you can run scoop import scoop-apps.json (path of the .json file)
 
 :: Prompt for optional install
