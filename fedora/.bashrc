@@ -35,3 +35,19 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/catppuccin_frappe.omp.json)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias fixnet='curl -v http://neverssl.com'
+
+unlock-wifi() {
+    echo "Scanning for captive portal..."
+    # Gets the 'Location' header from a request to a non-HTTPS site
+    TARGET=$(curl -s -o /dev/null -D - http://neverssl.com | grep -i 'location:' | awk '{print $2}' | tr -d '\r')
+
+    if [ -z "$TARGET" ]; then
+        echo "No redirect detected. Opening neverssl.com manually..."
+        xdg-open http://neverssl.com
+    else
+        echo "Portal found! Opening: $TARGET"
+        xdg-open "$TARGET"
+    fi
+}
