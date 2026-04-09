@@ -264,7 +264,3 @@ pandoc assignment.md -o assignment.pdf
 and get a **fully formatted PDF instantly**.
 
 ---
-
-# Resources
-
-[Deep Learning book notation](https://github.com/goodfeli/dlbook_notation)
