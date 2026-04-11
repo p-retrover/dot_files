@@ -51,3 +51,15 @@ unlock-wifi() {
         xdg-open "$TARGET"
     fi
 }
+ppt2pdf() {
+    libreoffice --headless --convert-to pdf "$1"
+}
+
+fuzz() {
+    file=$(fzf)
+    if [ ${#file} -gt 0 ]; then
+      nvim "$file"
+    else
+      :
+    fi
+}
