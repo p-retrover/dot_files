@@ -67,25 +67,11 @@ On Windows, XeLaTeX pulls fonts from the system font store. You need to manually
 
 ---
 
-## 6. Running the Build
-
-[cite_start]Since you've installed `make`, you can navigate to your repository in PowerShell and run the same commands you use in your **private GitHub repo** [cite: 8-18]:
-
-```powershell
-# Build the high-density technical CV
-make technical
-
-# Build the minimal research CV
-make minimal
-```
-
----
-
-## 7. Troubleshooting Windows-Specific Issues
+## 6. Troubleshooting Windows-Specific Issues
 
 ### The `/dev/null` Conflict
 
-[cite_start]In your **Makefile**, you used `/dev/null` as a dummy input to silence Pandoc warnings [cite: 8-18]. Windows uses `NUL` instead. To make your repo cross-platform, you can update your Makefile variable:
+In your **Makefile**, you used `/dev/null` as a dummy input to silence Pandoc warnings. Windows uses `NUL` instead. To make your repo cross-platform, you can update your Makefile variable:
 
 ```makefile
 # Cross-platform NUL/null
